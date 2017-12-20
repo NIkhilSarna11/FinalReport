@@ -423,7 +423,7 @@ Like other programming style guides, the issues covered span not only aesthetic 
 \item Tab characters are not used for indentation.
 \end{itemize}
 
-	\section{GANT chart
+	\section{GANTT chart
 	}
 	\begin{figure}[ht]
 \centering
@@ -444,3 +444,229 @@ But it takes much time and efforts to create tests by means of Robotium, as one 
 MonkeyRunner Android App Testing
 MonkeyRunner is one of popular Android Testing tools used for automating of functional tests for Android software. This tool is more low-level than Robotium is. One does not have to deal with the source code in order to automate tests. The tests are written in Python, one may use a recording tool for creating tests.
 MonkeyRunner can run tests on real devices connected to a PC or emulators. The tool has an API what allows it to control a smartphone, a tablet or an emulator from outside of Android code. A significant disadvantage of the mobile app testing tool is that it is necessary to write scripts for each device. Another problem of MonkeyRunner is that the tests require adjustments each time when user interface of the tested program is changed.
+\newpage
+\subsection{Test Plans}
+
+\subsubsection{Testing of login}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ | m{4.5em} | m{4.5cm}|} 
+\hline
+Test Id: & TC1   \\ 
+\hline
+Tester: & Student  \\ 
+\hline
+Date: & 8-11-2017  \\ 
+\hline
+Purpose: & Login to system   \\ 
+\hline
+Pre-requisites: & Must fill login form   \\ 
+\hline
+Test Data: & Email, Password   \\ 
+\hline
+Steps: &  \\
+\hline  
+Step 1 &  Start Application \\ 
+Step 2 &  Login Activity will be displayed  \\ 
+Step 3 &  Enter password  \\ 
+Step 4 &  Click login  \\ 
+Step 5 &  If the email and password is correct Home Activity will appear  \\ 
+Step 6 &  If the username and password is not correct toast will appear \\
+\hline
+Status: & Pass   \\ 
+\hline
+\end{tabular}
+\caption{Test Case 1}
+\label{table:1}
+\end{table}
+\newpage
+\subsubsection{Testing of Adding News} 	
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ | m{5em} | m{5cm}|} 
+\hline
+Test Id: & TC2   \\ 
+\hline
+Tester: & Admin  \\ 
+\hline
+Date: & 12-11-2017  \\ 
+\hline
+Purpose: & Adding news to database   \\ 
+\hline
+Pre-requisites: & Must be login   \\ 
+\hline
+Test Data: & Email, Password, News   \\ 
+\hline
+Steps: &  \\
+\hline  
+Step 1 &  Start Application \\ 
+Step 2 &  Login Activity will be displayed  \\ 
+Step 3 &  Enter password  \\ 
+Step 4 &  Click login  \\ 
+Step 5 &  Home Activity will appear  \\ 
+Step 6 &  Open bottom slider \\
+Step 7 &  Click on Add News\\
+Step 8 &  Enter valid news(if not added then error display)  \\
+Step 9 &  Click on Add News button and it will be uploaded \\
+\hline
+Status: & Pass   \\ 
+\hline
+\end{tabular}
+\caption{Test Case 2}
+\label{table:2}
+\end{table}
+
+\newpage
+\subsubsection{Testing of retrieving news from database} 	
+
+ \begin{table}[h!]
+\centering
+\begin{tabular}{ | m{5em} | m{5cm}|} 
+\hline
+Test Id: & TC3   \\ 
+\hline
+Tester: & Admin  \\ 
+\hline
+Date: & 25-11-2017  \\ 
+\hline
+Purpose: & Retrieving news from database   \\ 
+\hline
+Pre-requisites: & Must be login and Pdf in database  \\ 
+\hline
+Test Data: & Email, Password, Any news in database   \\ 
+\hline
+Steps: &  \\
+\hline  
+Step 1 &  Start Application \\ 
+Step 2 &  Login Activity will be displayed  \\ 
+Step 3 &  Enter password  \\ 
+Step 4 &  Click login  \\ 
+Step 5 & Drag navigation bar and click on latest news \\
+Step 5 &  News displayed in Fragment  \\ 
+\hline
+Status: & Pass   \\ 
+\hline
+\end{tabular}
+\caption{Test Case 3}
+\label{table:3}
+\end{table}
+
+\newpage
+\subsubsection{Testing of adding pdf of athletic meet result} 	
+
+ \begin{table}[h!]
+\centering
+\begin{tabular}{ | m{5em} | m{5cm}|} 
+\hline
+Test Id: & TC4   \\ 
+\hline
+Tester: & Admin  \\ 
+\hline
+Date: & 25-11-2017  \\ 
+\hline
+Purpose: & Adding pdf of athletic meet result\\ 
+\hline
+Pre-requisites: & Must be login and Pdf in mobile memory\\ 
+\hline
+Test Data: & Email, Password, Pdf    \\ 
+\hline
+Steps: &  \\
+\hline  
+Step 1 &  Start Application \\ 
+Step 2 &  Login Activity will be displayed  \\ 
+Step 3 &  Enter password  \\ 
+Step 4 &  Click login  \\ 
+Step 5 &  Home Activity will appear  \\ 
+Step 6 &  Drag bottom slider and click Add Meet Results button\\
+Step 7 &  Enter name of the year and  \\
+Step 8 &  Click on SELECT PDF button and select pdf from mobile memory\\
+Step 9 &  Click on the Upload Pdf button and Pdf will be uploaded \\ 
+\hline
+Status: & Pass   \\ 
+\hline
+\end{tabular}
+\caption{Test Case 4}
+\label{table:4}
+\end{table}
+
+\newpage
+\subsubsection{Testing of Map functionality in application} 	
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ | m{5em} | m{5cm}|} 
+\hline
+Test Id: & TC5   \\ 
+\hline
+Tester: & Student  \\ 
+\hline
+Date: & 25-11-2017  \\ 
+\hline
+Purpose: & Checking Map functionality\\ 
+\hline
+Pre-requisites: & Must be login   \\ 
+\hline
+Test Data: & Email, Password, Map  \\ 
+\hline
+Steps: &  \\
+\hline  
+Step 1 &  Start Application \\ 
+Step 2 &  Login Activity will be displayed  \\ 
+Step 3 &  Enter password  \\ 
+Step 4 &  Click login  \\ 
+Step 5 &  Home Activity will appear  \\ 
+Step 6 &  Darg right for navigation bar  \\
+Step 7 &  Click Map button  \\
+Step 8 &  Map of sports department will be apper in the browser\\
+
+\hline
+Status: & Pass   \\ 
+\hline
+\end{tabular}
+\caption{Test Case 5}
+\label{table:5}
+\end{table}
+
+\newpage
+\subsubsection{Testing of adding achievement in different categories } 	
+
+ \begin{table}[h!]
+\centering
+\begin{tabular}{ | m{5em} | m{5cm}|} 
+\hline
+Test Id: & TC6   \\ 
+\hline
+Tester: & Admin  \\ 
+\hline
+Date: & 25-11-2017  \\ 
+\hline
+Purpose: & Adding achievement different categories   \\ 
+\hline
+Pre-requisites: & Must be login  \\ 
+\hline
+Test Data: & Email, Password, content to add achievement   \\ 
+\hline
+Steps: &  \\
+\hline  
+Step 1 &  Start Application \\ 
+Step 2 &  Login Activity will be displayed  \\ 
+Step 3 &  Enter password  \\ 
+Step 4 &  Click login  \\ 
+Step 5 &  Home Activity will appear  \\ 
+Step 6 &  Drag upward for bottom slider  \\
+Step 7 &  Choose category(Intramural or Extramural) to add achievement \\
+Step 8 &  Click Choose button to upload picture and add description \\
+Step 9 &  Click Upload button and achievement will be uploaded \\
+\hline
+Status: & Pass   \\ 
+\hline
+\end{tabular}
+\caption{Test Case 6}
+\label{table:6}
+\end{table}
+ 
+ 
+ 
+ 
